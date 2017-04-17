@@ -70,9 +70,10 @@ def start_scan():
    ipandsub = network_id+"/"+str(subnet)
    values=[]
    values = arp_scan(ipandsub)
-   for i in values:
+   #for i in values:
       #print(i)
-   #return values
-if __name__ == "__main__":
-   start_scan()
+   return values
+values = start_scan()
+for i in values:
+    print(i)
 
